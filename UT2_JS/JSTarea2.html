@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="nombre"></p>
+    <p id="apellido"></p>
+    <p id="numero1"></p>
+    <p id="numero2"></p>
+    <p id="suma"></p>
+    <p id="resta"></p>
+    <p id="producto"></p>
+    <p id="cociente"></p>
+    <script>
+        var nombre=prompt("Introduzca su nombre ")
+        var apellido=prompt("Introduzca su apellido ")
+        var numero1=prompt("Introduzca un numero ")
+        var numero2=prompt("Introduzca un numero ")
+        numero1=parseInt(numero1)
+        numero2=parseInt(numero2)
+        
+        var suma = numero1+numero1
+        var resta= numero1-numero2
+        var producto=numero1* numero2
+        var cociente= numero1 / numero2
+       
+        const parrafoNombre=document.getElementById("nombre");
+        parrafoNombre.textContent=`Nombre:${nombre}`;
+
+        const parrafoApellido = document.getElementById("apellido");
+        parrafoApellido.textContent = `Apellido: ${apellido}`;
+
+        const parrafoNumero1 = document.getElementById("numero1");
+        parrafoNumero1.textContent = `Número 1: ${numero1}`;
+
+        const parrafoNumero2 = document.getElementById("numero2");
+        parrafoNumero2.textContent = `Número 2: ${numero2}`;
+
+        const parrafoSuma = document.getElementById("suma");
+        parrafoSuma.textContent = `Suma: ${suma}`;
+
+        const parrafoResta = document.getElementById("resta");
+        parrafoResta.textContent = `Resta: ${resta}`;
+
+        const parrafoProducto = document.getElementById("producto");
+        parrafoProducto.textContent = `Producto: ${producto}`;
+
+        const parrafoCociente = document.getElementById("cociente");
+        parrafoCociente.textContent = `Cociente: ${cociente}`;
+
+       
+    </script>
+
+    
+</body>
+</html>
