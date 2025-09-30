@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body >
 
     <p id="parrafo">Texto de ejemplo</p>
-    <input type="button" onclick="agrandarFuente()" value="+">
+    
+    <input type="button" onclick="ocultar()" value="ocultar"><input type="button" onclick="mostrar()" value="mostrar">
     <script>
-        function cambiarColorFondo(){
-          
-        }
-        function agrandarFuente(){
+       
+        function ocultar(){
             let parrafo=document.getElementById("parrafo")
-            parrafo.style.fontSize+=1
+            parrafo.style.display="none"
+        }
+        function mostrar(){
+            let parrafo=document.getElementById("parrafo")
+            parrafo.style.display="inline"
         }
     </script>
 </body>

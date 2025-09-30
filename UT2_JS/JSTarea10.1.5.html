@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"onclick="cambiarColorFondo()">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+
+    <p id="parrafo">Texto de ejemplo</p>
+    <input type="button" onclick="agrandarFuente()" value="+"> <input type="button" onclick="menguarFuente()" value="-">
+    <input type="button" onclick="ocultar()" value="ocultar"><input type="button" onclick="mostrar()" value="mostrar">
+    <script>
+        function cambiarColorFondo(){
+            
+            let fondo=document.querySelector("body")
+            fondo.style.backgroundColor= "yellow"
+            
+        }
+        function agrandarFuente(){
+            let parrafo=document.getElementById("parrafo")
+            let tamanioLetra=parseInt(parrafo.style.fontSize) || 16
+            parrafo.style.fontSize=(tamanioLetra+1)+ "px"
+        }
+        function menguarFuente(){
+            let parrafo=document.getElementById("parrafo")
+            let tamanioLetra=parseInt(parrafo.style.fontSize) || 16
+            parrafo.style.fontSize=(tamanioLetra-1)+ "px"
+        }
+        function ocultar(){
+            let parrafo=document.getElementById("parrafo")
+            parrafo.style.display="none"
+        }
+        function mostrar(){
+            let parrafo=document.getElementById("parrafo")
+            parrafo.style.display="inline"
+        }
+    </script>
+</body>
+</html>
