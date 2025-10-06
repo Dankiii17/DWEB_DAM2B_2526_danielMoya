@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="resultado"></p>
+    
+</body>
+<script>
+   
+   
+    
+     // Leer una secuencia de n números.     
+    let salir=false
+    let numeros=[]
+    let indice=0
+        while(!salir){
+            let valor=prompt("Introduzca un numero(escriba c para salir)")
+            if(valor=="c"){
+                salir=true
+                 // Almacenarlos en un vector 
+            }else{
+                numeros[indice]=valor
+                indice++
+            }
+            
+        }
+        
+        let valor
+        // y mostrar la posición donde se encuentra el mayor valor leído. 
+        for (let i = 0; i < numeros.length; i++) {
+            if(valor==null||valor<numeros[i]){
+                valor=numeros[i]
+                let indice=i
+                document.getElementById("resultado").innerHTML="Indice:"+indice;
+                document.getElementById("resultado").innerHTML+="Valor:"+valor;
+            }
+        }
+</script>
+</html>

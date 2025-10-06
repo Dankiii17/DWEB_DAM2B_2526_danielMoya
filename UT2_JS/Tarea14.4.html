@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let vectro1=[1,2,3,4,5,6,7,8,9]
+    let vector2=[2,46,1,6,78,12,7,4,3,3]
+    let resultado=[]
+    let mayor
+    if(vector2.length<vectro1.length){
+        mayor=vector1.length
+    }else{
+        mayor=vector2.length
+    }
+    for(let i=0; i<mayor; i++){
+        let num1=vectro1[i]
+        let num2=vector2[i]
+        if(num1==null ||num2==null){
+            if(num1==null){
+                resultado[i]=num2
+            }else{
+            resultado[i]=num1+num2
+            }
+        }else{
+        resultado[i]=parseInt(num1)+parseInt(num2)
+       
+        }
+         console.log(resultado[i])
+    }
+</script>
+</html>

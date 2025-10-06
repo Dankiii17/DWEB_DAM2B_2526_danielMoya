@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parrafo"></p>
+</body>
+<script>
+    let sueldos=[]
+
+    function Cargar(array){
+        for(let i=0; i<5; i++){
+            array[i]=parseInt(Math.random() *(1000,2000) +1000)
+        }
+    }
+
+    function calcularGastos(array){
+        let gasto=0
+        for(let i=0; i<5;i++){
+            document.getElementById("parrafo").innerHTML+=`Sueldo ${i} : ${array[i]} <br>`
+            gasto+=array[i]
+        }
+            document.getElementById("parrafo").innerHTML+=`Gasto total ${gasto}`
+    }
+    Cargar(sueldos)
+    calcularGastos(sueldos)
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parrafo"></p>
+    
+</body>
+<script>
+    
+    let palabras=[]
+    let indice=0
+    let salir=false
+        while(!salir){
+            let valor=prompt("Introduzca una palabra(escriba c para salir)")
+            if(valor=="c"){
+                salir=true
+                 
+            }else{
+                palabras[indice]=valor
+                indice++
+            }
+        }
+    palabras.forEach(palabra => {
+        document.getElementById("parrafo").innerHTML+=`<br> ${palabra}: ${palabra.length} letras`
+        
+    });
+</script>
+</html>

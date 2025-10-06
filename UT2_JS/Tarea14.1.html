@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parrafo"><table></table></p>
+    
+</body>
+<script>
+    let nombres=[]
+    let nombre1= prompt("Introduzca un nombre")
+    let nombre2= prompt("Introduzca un nombre")
+    let nombre3= prompt("Introduzca un nombre")
+    nombres[0]=nombre1
+    nombres[1]=nombre2
+    nombres[2]=nombre3
+    for(let i=0; i<nombres.length;i++){
+        document.getElementById("parrafo").innerHTML+=" "+nombres[i]
+    }
+</script>
+</html>
