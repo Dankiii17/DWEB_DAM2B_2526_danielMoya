@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea placeholder="Introduzca un texto"></textarea>
+    <button onclick="nose()">Pulsame</button>
+</body>
+<script>
+    function nose(){
+    let texto=document.querySelector("textarea").value
+    let palabras= texto.split(" ")
+    let numeroPalabras= palabras.length
+    let primeraPalabra= palabras[0]
+    let ultimaPalabra= palabras[numeroPalabras-1]
+    let palabrasInverso= palabras.reverse()
+    let palabrasA_Z= palabras.sort()
+    let palabrasZ_A=palabrasA_Z.reverse()
+
+    let ventana=window.open(_blank,)
+    
+    }
+</script>
+</html>
